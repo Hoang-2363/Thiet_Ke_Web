@@ -1,0 +1,383 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+ul{
+  font-weight: 900;
+}
+.dau {
+  border-bottom: 2px solid rgb(199, 191, 191);
+  height: 80px;
+}
+.logo {
+  width: 100px;
+  float: left;
+  margin: 10px 50px 5px 100px;
+}
+.timkiem {
+  float: left;
+  margin-left: 80px;
+}
+.khung {
+  width: 600px;
+  height: 30px;
+  border-radius: 5px;
+  margin: 25px 0 0 0;
+}
+.dien {
+  width: 500px;
+  padding: 8px;
+  border: 2px solid black;
+  float: left;
+  border-radius: 5px 0 0 5px;
+}
+.an {
+  padding: 8px 15px;
+  background-color: orange;
+  border-radius: 0 5px 5px 0;
+}
+
+.giohang {
+  margin: 0 0 0 970px;
+}
+.giohang a {
+  color: black;
+  text-decoration: none;
+  margin: 8px;
+}
+.giohang i {
+  font-size: 20px;
+  margin: 30px 5px;
+}
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.overlay-content {
+  padding: 20px;
+  width: 450px;
+  margin: 13% 34%;
+  position: relative;
+  background-color: red;
+  color: #f1f1f1;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.overlay a {
+  text-decoration: none;
+  display: block;
+  transition: 0.3s;
+  color: #f1f1f1;
+  text-align: center;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #000000;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 170px;
+  right: 450px;
+  font-size: 40px;
+  z-index: 1;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0 0 20px 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(255, 0, 0);
+}
+li {
+  float: left;
+}
+li a,
+.dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover,
+.dropdown:hover .dropbtn {
+  background-color: blue;
+}
+li.dropdown {
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: red;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#banchay {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  font-size: 30px;
+  margin: 40px 40px;
+}
+.than {
+  margin: 90px;
+}
+p {
+  display: flex;
+  flex-direction: row;
+}
+p:before,
+p:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid;
+  margin: auto;
+}
+p:before {
+  margin-right: 10px;
+}
+p:after {
+  margin-left: 10px;
+}
+
+.than1 {
+  margin-left: 120px;
+}
+
+a {
+  text-decoration: none;
+}
+.tt {
+  height: 400px;
+}
+.tintuc {
+  margin: 0 60px 0 60px;
+}
+.than2 {
+  float: left;
+  width: 45%;
+}
+
+.link1 {
+  font-size: 25px;
+  color: black;
+}
+.link1:hover {
+  color: blue;
+}
+.link2 {
+  font-size: 18px;
+  color: black;
+}
+.than21 {
+  height: 135px;
+}
+.link2:hover {
+  color: blue;
+}
+.ungdung {
+  height: 80px;
+  background-color: #ff4b1e;
+  padding: 0 130px 0 130px;
+}
+.hinhanh {
+  margin: 40px 0 20px 0;
+}
+.baohanh {
+  width: 220px;
+  float: left;
+  margin: 20px 0 0 70px;
+}
+.icon {
+  width: 40px;
+  float: left;
+}
+.content {
+  margin: 5px 0 0 50px;
+}
+
+.thongtin {
+  margin: 20px 0 0 45px;
+  height: 200px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.chinhsach {
+  width: 20%;
+  float: left;
+}
+.chinhsach div {
+  margin-bottom: 10px;
+}
+.lienket {
+  width: 20%;
+  float: left;
+}
+.order {
+  width: 20%;
+  float: left;
+}
+.lienhe {
+  width: 35%;
+  float: left;
+  padding-left: 80px;
+}
+.lienhe div {
+  margin-bottom: 10px;
+}
+.lienhe_mot {
+  font-weight: bold;
+}
+.lienhe_hai {
+  font-weight: bold;
+  font-size: 30px;
+}
+.vanchuyen {
+  height: 70px;
+}
+.vanchuyen img {
+  width: 60px;
+  height: 60px;
+  float: left;
+}
+.hotro {
+  margin: 10px;
+  font-weight: bold;
+}
+
+/* Yêu thích */
+table,
+th,
+td {
+  border: 1px solid #000000;
+  padding: 10px;
+  text-align: center;
+}
+table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: 0 0 100px 100px;
+}
+
+/* Ảnh động */
+.mySlides {
+  display: none;
+}
+img {
+  vertical-align: middle;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.dot {
+  height: 5px;
+  width: 5px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+}
+
+/*Sản phẩm*/
+.luachon {
+  background-color: rgb(160, 137, 137);
+  height: 50px;
+  padding: 14px;
+}
+.luachon h3 {
+  float: left;
+}
+.ao {
+  margin: 0 40px 40px 60px;
+  float: left;
+}
+.ao img {
+  margin-bottom: 20px;
+}
+.ao span {
+  padding: 50px 0 0 70px;
+}
+
+/* Giới thiệu shop */
+.gioithieu_shop {
+  margin: 20px;
+  height: auto;
+  line-height: 1.5;
+}
+.anh_shop {
+  margin: 20px 40px;
+}
+.gioithieu_shop_mot img {
+  float: left;
+}
+
+/* Sản phẩm */
+.ao_mot {
+  width: 25%;
+  float: left;
+  margin: 30px;
+}
+.mua_hang {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  background-color: #67ff20;
+  margin: 0 400px 0 400px;
+  padding: 15px;
+}
+.mua_hang:hover {
+  background-color: #ff4b1e;
+}

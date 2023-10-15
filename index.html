@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon"
+        href="https://images.vectorhq.com/images/previews/26a/chanel-logo-with-text-psd-441166.png">
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div>
+        <div class="dau">
+            <div class="logo">
+                <a href="index.html"><img
+                        src="https://images.vectorhq.com/images/previews/26a/chanel-logo-with-text-psd-441166.png"
+                        alt="logo" height="60" width="100"></a>
+            </div>
+            <div class="timkiem">
+                <form role="search" method="get" class="khung" action="http://127.0.0.1:5500/index.html#gt">
+                    <label>
+                        <input type="search" class="dien" placeholder="Nhập tên sản phẩm ..." value="" name="s">
+                    </label>
+                    <button type="submit" class="an"><span class="screen"><i
+                                class="fa fa-fw fa-search"></i></span></button>
+                </form>
+            </div>
+            <div class="giohang">
+                <a href="yeuthich.html"><i class="fa fa-heart" aria-hidden="true"></i><b>Yêu thích</b></a>
+                <div id="myNav" class="overlay">
+                    <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">
+                        <div><b>GIỎ HÀNG</b></div>
+                        <div style="margin: 80px 50px;">Không có sản phẩm nào ở trong giỏ hàng!</div>
+                        <a href="index.html">TIẾP TỤC MUA HÀNG</a>
+                    </div>
+                </div>
+                <a href="#"><i class="fa fa-cart-plus" aria-hidden="true"></i><b style="cursor:pointer"
+                        onclick="openNav()">Giỏ hàng</b></a>
+                <a href="#"><i class="fa fa-user-circle" aria-hidden="true"></i><b>Tài khoản</b></a>
+            </div>
+        </div>
+
+        <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="gioithieu.html">Giới thiệu</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Sản phẩm</a>
+                <div class="dropdown-content">
+                    <a href="sanpham_ao.html">Áo Nam</a>
+                    <a href="sanpham_quan.html">Quần Nam</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Phụ kiện</a>
+                <div class="dropdown-content">
+                    <a href="phukien_mk.html">Kính Mắt Nam</a>
+                    <a href="phukien_tl.html">Thắt Lưng Nam</a>
+                    <a href="phukien_tx.html">Túi Sách Nam</a>
+                    <a href="phukien_vd.html">Ví Da Nam</a>
+                </div>
+            </li>
+            <li><a href="sanpham_ao.html">Khuyến mại</a></li>
+            <li><a href="#tintuc">Tin tức</a></li>
+            <li><a href="#thongtin">Liên hệ</a></li>
+        </ul>
+    </div>
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="https://cf.shopee.vn/file/90484c57639c0894c1c6396e9a023190" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="https://cf.shopee.vn/file/8d895ba28b1ab4f0b024942dc11a6211" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="https://cf.shopee.vn/file/00e39f159b4bba1b5ea359ca1a9ea80c" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="https://cf.shopee.vn/file/3268dd1e55b8f104cce97fcaffc21fd8" style="width:100%">
+        </div>
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 4000);
+        }
+    </script>
+
+    <div id="banchay">
+        <p>TOP SẢN PHẨM BÁN CHẠY</p>
+    </div>
+    <div class="than">
+        <div class="ao">
+            <a href="sp_4.html">
+                <div><img src="https://canifa.com/img/1000/1500/resize/8/t/8tp21w008-sr067-l-1.jpg" alt="ao1"
+                        height="350px" width="330"></div>
+                <span>Áo Nam polo 59CG00H-004C</span>
+                <div style="color: red; padding: 10px 0 0 140px">199.000đ</div>
+            </a>
+        </div>
+        <div class="ao">
+            <a href="sp_5.html">
+                <div><img src="https://canifa.com/img/212/284/resize/8/t/8tp21w006-sb793-l-1.jpg" alt="ao1"
+                        height="350px" width="330"></div>
+                <span>Áo Nam polo 59CG00H-005D</span>
+                <div style="color: red; padding: 10px 0 0 140px">499.000đ</div>
+            </a>
+        </div>
+        <div class="ao">
+            <a href="sp_6.html">
+                <div><img src="https://canifa.com/img/1000/1500/resize/8/t/8tp21w006-sw001-l-1.jpg" alt="ao1"
+                        height="350px" width="330"></div>
+                <span>Áo Nam polo 59CG00H-006D</span>
+                <div style="color: red; padding: 10px 0 0 140px">599.000đ</div>
+            </a>
+        </div>
+        <div class="ao">
+            <a href="sp_16.html">
+                <div><img
+                        src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/433329/item/goods_30_433329.jpg?width=1600&impolicy=quality_75"
+                        alt="ao1" height="350px" width="330"></div>
+                <span>Quần Nam 60CG00H-146A</span>
+                <div style="color: red; padding: 10px 0 0 140px">499.000đ</div>
+            </a>
+        </div>
+        <div class="ao">
+            <a href="sp_17.html">
+                <div><img
+                        src="https://image.uniqlo.com/UQ/ST3/vn/imagesgoods/448483/item/vngoods_05_448483.jpg?width=1600&impolicy=quality_75"
+                        alt="ao1" height="350px" width="330"></div>
+                <span>Quần Nam 60CG00H-146C</span>
+                <div style="color: red; padding: 10px 0 0 140px">199.000đ</div>
+            </a>
+        </div>
+        <div class="ao">
+            <a href="sp_18.html">
+                <div><img
+                        src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/450280/sub/goods_450280_sub14.jpg?width=1600&impolicy=quality_75"
+                        alt="ao1" height="350px" width="330"></div>
+                <span>Quần Nam 60CG00H-150D</span>
+                <div style="color: red; padding: 10px 0 0 140px">699.000đ</div>
+            </a>
+        </div>
+
+    </div>
+    <div style="clear: both;"></div>
+    <div id="banchay">
+        <p>HÀNG MỚI VỀ</p>
+    </div>
+    <div class="than">
+        <div class="ao">
+            <a href="sp_7.html">
+                <div><img src="https://cf.shopee.vn/file/07bdcf2cbf53d2457ac9401b4b4882e3" alt="ao1" height="350px"
+                        width="330"></div>
+                <span>Áo Nam cổ ngắn 59CG00H-004C</span>
+                <div style="color: red; padding: 10px 0 0 140px">399.000đ</div>
+            </a>
+        </div>
+        <div class="ao">
+            <a href="sp_8.html">
+                <div><img src="https://cf.shopee.vn/file/f6438f052dc58c19f3c05bbbdb7c9ac2" alt="ao1" height="350px"
+                        width="330"></div>
+                <span>Áo Nam cổ ngắn 59CG00H-005D</span>
+                <div style="color: red; padding: 10px 0 0 140px">299.000đ</div>
+            </a>
+        </div>
+        <div class="ao">
+            <a href="sp_9.html">
+                <div><img src="https://cf.shopee.vn/file/8a83352bd691a903c186787c2ba1dd50" alt="ao1" height="350px"
+                        width="330"></div>
+                <span>Áo Nam cổ ngắn 59CG00H-006D</span>
+                <div style="color: red; padding: 10px 0 0 140px">399.000đ</div>
+            </a>
+        </div>
+        <div class="ao">
+            <a href="sp_10.html">
+                <div><img
+                        src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/442533/item/goods_69_442533.jpg?width=1600&impolicy=quality_75"
+                        alt="ao1" height="350px" width="330"></div>
+                <span>Quần Nam 60CG00H-121A</span>
+                <div style="color: red; padding: 10px 0 0 140px">699.000đ</div>
+            </a>
+        </div>
+        <div class="ao">
+            <a href="sp_11.html">
+                <div><img src="https://canifa.com/img/1000/1500/resize/8/b/8bp21w010-db056-l-1.jpg" alt="ao1"
+                        height="350px" width="330"></div>
+                <span>Quần Nam 60CG00H-121B</span>
+                <div style="color: red; padding: 10px 0 0 140px">799.000đ</div>
+            </a>
+        </div>
+        <div class="ao">
+            <a href="sp_12.html">
+                <div><img src="https://canifa.com/img/486/733/resize/8/b/8bp21w008-sa599-l-1.jpg" alt="ao1"
+                        height="350px" width="330"></div>
+                <span>Quần Nam 60CG00H-129A</span>
+                <div style="color: red; padding: 10px 0 0 140px">399.000đ</div>
+            </a>
+        </div>
+    </div>
+
+    <div id="banchay" style="clear: both;">
+        <p>TIN TỨC</p>
+    </div>
+    <div class="tt">
+        <div class="tintuc">
+            <div class="than2">
+                <div>
+                    <a href="https://kenh14.vn/cung-kham-pha-phong-cach-cua-ban-trong-su-kien-thoi-trang-sieu-hot-mua-dong-nam-nay-20191217133241019.chn"
+                        class="link1">
+                        <img src="https://channel.mediacdn.vn/2019/12/17/photo-4-15765604747252047158514.jpg"
+                            alt="sukientt" height="340" width="540"><br>
+                            <span>Cùng khám phá phong cách của bạn trong sự kiện thời <br> trang siêu hot mùa hè năm nay.</span>
+                    </a>
+                </div>
+            </div>
+            <div>
+
+                <div class="than3">
+                    <div class="than21">
+                        <a href="https://kenh14.vn/mix-do-cuc-chat-cho-chang-dep-tu-nha-ra-pho-20181102010024406.chn"
+                            class="link2">
+                            <img src="https://channel.mediacdn.vn/prupload/879/2018/11/img20181101173359499.jpg"
+                                alt="sukientt" height="120" width="220" style="float: left;">
+                            <p class="link2">Miền Bắc đã thực sự vào Đông chưa nhỉ? Những cơn gió se lạnh, những đợt gió
+                                mùa đông bắc tràn về bất chợt khiến bất kỳ chàng trai nào cũng cần làm mới tủ quần áo
+                                của mình.</p>
+                        </a>
+                    </div>
+                    <div class="than21">
+                        <a href="https://gentleman70.com/kien-thuc-do-da/5-ly-giai-do-da-co-suc-hut-doi-voi-phai-manh.html/" class="link2">
+                            <img src="https://gentleman70.com/wp-content/uploads/2021/05/230520211621751345.jpeg" alt="sukientt"
+                                height="120" width="220" style="float: left;">
+                            <p class="link2">Đồ da có sức hút vô cùng mãnh liệt với thời trang hiện đại. Có những chiếc
+                                áo da xa xỉ đến mức chỉ có người nổi tiếng hoặc những người giàu có nhất mới có thể sở
+                                hữu. Cùng khám phá top áo da đắt nhất mọi thời đại qua bài viết này nhé!</p>
+                        </a>
+                    </div>
+                    <div class="than21">
+                        <a href="https://vnexpress.net/vi-sao-ngay-cang-nhieu-nam-gioi-mac-vay-4353121.html"
+                            class="link2">
+                            <img src="https://i1-giadinh.vnecdn.net/2021/09/08/1630918895604-img4893-jpeg-4485-1631082119.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=or1fWm7eW7Q3mAgWGvVyGw"
+                                alt="sukientt" height="120" width="220" style="float: left;">
+                            <p class="link2">Ngày càng nhiều nam giới ở Mỹ và một số nước châu Âu tìm mua váy, mặc hàng
+                                ngày để khoe cơ thể, đồng thời bảo vệ quan điểm: thời trang không phân biệt giới tính.
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="banchay">
+            <p>DANH SÁCH THƯƠNG HIỆU NỔI TIẾNG</p>
+            <div class="hinhanh">
+                <img src="https://cdn-img.thethao247.vn/upload/nguyetdt/2019/09/20/louis-vuitton.jpg" alt="lv"
+                    height="200" width="200">
+                <img src="https://cdn-img.thethao247.vn/upload/nguyetdt/2019/09/20/armani.jpg" alt="rio" height="200"
+                    width="200">
+                <img src="https://cdn-img.thethao247.vn/upload/nguyetdt/2019/09/20/HM.png" alt="hm" height="200"
+                    width="200">
+                <img src="https://cdn-img.thethao247.vn/upload/nguyetdt/2019/09/20/gucci.JPG" alt="gucci" height="200"
+                    width="200">
+                <img src="https://cdn-img.thethao247.vn/upload/nguyetdt/2019/09/20/burberry.JPG" alt="bur" height="200"
+                    width="200">
+                <img src="https://cdn-img.thethao247.vn/upload/nguyetdt/2019/09/20/prada.jpg" alt="parada" height="200"
+                    width="200">
+            </div>
+        </div>
+
+        <div class="ungdung">
+            <div class="baohanh">
+                <div class="icon"><img style="max-width: 40px;"
+                        src="https://tt01.chonweb.vn/wp-content/uploads/2020/11/icon-one.png"></div>
+                <div class="content">BẢO HÀNH TRỌN ĐỜI TRÊN TOÀN QUỐC</div>
+            </div>
+            <div class="baohanh">
+                <div class="icon"><img style="max-width: 40px;"
+                        src="https://tt01.chonweb.vn/wp-content/uploads/2020/11/icon-two.png"></div>
+                <div class="content">MIỄN PHÍ<br> ĐỔI TRẢ 365 NGÀY</div>
+            </div>
+            <div class="baohanh">
+                <div class="icon"><img style="max-width: 40px;"
+                        src="https://tt01.chonweb.vn/wp-content/uploads/2020/11/icon-three.png"></div>
+                <div class="content">MIỄN PHÍ BẢO HÀNH<br> ĐẾN 10 NĂM</div>
+            </div>
+            <div class="baohanh">
+                <div class="icon"><img style="max-width: 40px;" class="lazy"
+                        src="https://tt01.chonweb.vn/wp-content/uploads/2020/11/icon-four.png"></div>
+                <div class="content">CAM KẾT HÀNG CHÍNH HÃNG 100%</div>
+            </div>
+        </div>
+
+        <div class="thongtin">
+            <div class="lienhe" id="thongtin">
+                <div class="lienhe_mot">GỌI MUA HÀNG</div>
+                <div class="lienhe_hai">0123456789</div>
+                <div class="lienhe_ba">(08:00-22:00 tất cả các ngày trong tuần)</div>
+                <div><span class="lienhe_mot">Web:</span> tt01.chonweb.vn</div>
+                <div><span class="lienhe_mot">Email:</span> contact@demo.com</div>
+                <div><span class="lienhe_mot">Phone:</span> 0123.456.789</div>
+            </div>
+
+            <div class="chinhsach">
+                <div class="lienhe_mot">CHÍNH SÁCH</div>
+                <div>Đặt mua và vận chuyển</div>
+                <div>Đổi trả hàng hóa</div>
+                <div>Chính sách bảo hành</div>
+                <div>Chăm sóc khách hàng</div>
+            </div>
+
+            <div class="lienket">
+                <a href="#" style="font-size: 30px;">
+                    <img src="https://tt01.chonweb.vn/wp-content/themes/halink/images/fb.png" alt="Facebook">
+                </a>
+                <a href="#" style="font-size: 30px;">
+                    <img src="https://tt01.chonweb.vn/wp-content/themes/halink/images/yt.png" alt="Youtube">
+                </a>
+                <a href="#" style="font-size: 30px;">
+                    <img src="https://tt01.chonweb.vn/wp-content/themes/halink/images/prt.png" alt="Pinterest">
+                </a>
+                <a href="#" style="font-size: 30px;">
+                    <img src="https://tt01.chonweb.vn/wp-content/themes/halink/images/ld.png" alt="Linkedin">
+                </a>
+                <a href="#" style="font-size: 30px;">
+                    <img src="https://tt01.chonweb.vn/wp-content/themes/halink/images/tw.png" alt="Twitter">
+                </a>
+            </div>
+
+            <div class="order">
+                <div class="vanchuyen">
+                    <img src="https://tt03.chonweb.vn/wp-content/uploads/2021/01/icon-ho-tro-kh.png"
+                        alt="Hỗ trợ khách hàng">
+                    <div class="detail">
+                        <span class="hotro">Hỗ trợ khách hàng</span><br>
+                        <span class="hotro">Hỗ trợ 24/7</span>
+                    </div>
+                </div>
+                <div class="vanchuyen">
+                    <img src="https://tt03.chonweb.vn/wp-content/uploads/2021/01/icon-giao-hang-mien-phi.png"
+                        alt="Giao hàng miễn phí">
+                    <div class="detail">
+                        <span class="hotro">Giao hàng miễn phí</span><br>
+                        <span class="hotro">Nội thành TP Hà Nội</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
